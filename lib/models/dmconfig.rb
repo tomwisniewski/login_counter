@@ -4,9 +4,11 @@ require_relative './user'
 
 DataMapper::Logger.new($stdout, :debug)
 
-if ENV['RACK_ENV'] == 'test'
+if ENV['RACK_ENV'] == 'production'
+  connection_string = ENV['HEROKU_POSTGRESQL_SILVER_URL']
+elsif ENV['RACK_ENV'] == 'test'
   connection_string = "postgres://localhost/login_counter_test"
-elsif ENV['RACK_ENV'] == 'development'
+else ENV['RACK_ENV'] == 'development'
   connection_string = "postgres://localhost/login_counter_development"
 end
 
