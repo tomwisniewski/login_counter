@@ -12,6 +12,7 @@ $(document).ready(function(){
       type: "post",
       data: values,
       success: function(data){
+        $('.signin_error').hide();
         $('.signup_msgs').html(data);
         // if (password.length < 6) {
         //   $('.signup_msgs ul').append('<li>Your password must be at least 6 character long</li>');

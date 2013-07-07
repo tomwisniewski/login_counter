@@ -156,3 +156,71 @@ img {
 .cat a:hover {
   color: #811389;
 }
+
+@media (max-width: 815px) {
+  body {
+    background: url('blaa_tablet.jpg');
+  }
+
+  .wrapper {
+    width: 100%;
+    margin-right: 10px; 
+  }
+
+  #login, #signup {
+    width: 400px;
+    float: none;
+    margin: 0 auto;
+  }
+
+  #login {
+    margin-top: 10px;
+  }
+
+  #login .label_width {
+    display: block;
+    width: 105px;
+    float: left;
+    margin-left: 50px;
+  }
+
+  .signup_msgs {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .signin_error {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background: url('blaa_mobile.jpg');
+  }
+
+  .wrapper {
+    width: 100%;
+    margin-right: 10px; 
+  }
+
+  #login, #signup {
+    width: 300px;
+    float: none;
+    margin: 0 auto;
+  }
+
+  #login {
+    margin-top: 10px;
+  }
+
+  .signup_msgs {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  img {
+    width: 350px;
+  }
+}
