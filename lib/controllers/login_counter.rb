@@ -1,6 +1,6 @@
 require 'sinatra/base'
 require 'sinatra/flash'
-require 'debugger'
+# require 'debugger'
 require_relative '../models/dmconfig'
 
 class LoginCounter < Sinatra::Base

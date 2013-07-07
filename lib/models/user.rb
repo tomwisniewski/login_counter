@@ -1,6 +1,6 @@
 require 'data_mapper'
 require 'bcrypt'
-require 'debugger'
+# require 'debugger'
 
 class User
   include BCrypt
