@@ -173,8 +173,15 @@ img {
     margin-right: 10px; 
   }
 
-  #login, #signup {
+  #login {
     width: 400px;
+    float: none;
+    margin: 0 auto;
+  }
+
+  #signup {
+    width: 400px;
+    height: 230px;
     float: none;
     margin: 0 auto;
   }
@@ -215,7 +222,6 @@ img {
 
   #login {
     width: 300px;
-    height: 220px;
     float: none;
     margin: 0 auto;
     margin-top: 10px;
@@ -227,9 +233,13 @@ img {
     float: left;
   }
 
+  #login .label_width {
+    width: 300px;
+  }
+
   #signup {
     width: 300px;
-    height: 280px;
+    height: 340px;
     float: none;
     margin: 0 auto;
     margin-top: 10px;
