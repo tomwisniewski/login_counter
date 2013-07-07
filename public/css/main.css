@@ -229,7 +229,7 @@ img {
 
   #login {
     width: 280px;
-    height: 280px;
+    height: 220px;
     float: none;
     margin: 0 auto;
     margin-top: 10px;
@@ -253,10 +253,14 @@ img {
 
   #signup {
     width: 280px;
-    height: 280px;
+    height: 320px;
     float: none;
     margin: 0 auto;
     margin-top: 10px;
+  }
+
+  .welcome {
+    margin-left: 20px;
   }
 
   img {
