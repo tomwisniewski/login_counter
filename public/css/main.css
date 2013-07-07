@@ -203,7 +203,7 @@ img {
 
 /* MOBILE */
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
   body {
     background: url('blaa_mobile.jpg');
   }
@@ -213,13 +213,25 @@ img {
     margin-right: 10px; 
   }
 
-  #login, #signup {
+  #login {
     width: 300px;
+    height: 220px;
     float: none;
     margin: 0 auto;
+    margin-top: 10px;
   }
 
-  #login {
+  #signup .label_width {
+    display: block;
+    width: 160px;
+    float: left;
+  }
+
+  #signup {
+    width: 300px;
+    height: 280px;
+    float: none;
+    margin: 0 auto;
     margin-top: 10px;
   }
 
@@ -229,6 +241,6 @@ img {
   }
 
   img {
-    width: 350px;
+    width: 300px;
   }
 }
