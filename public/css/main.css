@@ -218,7 +218,7 @@ img {
 
   h1 {
     margin: 0 0 20px 0;
-    padding: 0;
+    padding-top: 20px;
   }
 
   .wrapper {
@@ -241,14 +241,19 @@ img {
     float: left;
   }
 
+  .signup_msgs {
+    width: 280px;
+    margin: 0;
+  }
+
   #login .label_width {
     width: 300px;
     margin: 0;
   }
 
   #signup {
-    width: 2800px;
-    height: 340px;
+    width: 280px;
+    height: 280px;
     float: none;
     margin: 0 auto;
     margin-top: 10px;
