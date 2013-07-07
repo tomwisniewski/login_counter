@@ -58,6 +58,7 @@ class LoginCounter < Sinatra::Base
   get '/counter' do
     if signed_in?
       @user = User.first(:first_name => session[:user])
+      @name = session[:user]
       @count = @user.login_count
       erb :counter
     else
