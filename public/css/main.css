@@ -1,3 +1,7 @@
+/* ============================================================
+   Base styles
+   ===========================================================*/
+
 @font-face {
   font-family: 'blaa';
   src: url("SketchRockwell-Bold.ttf") format("truetype");
@@ -27,6 +31,16 @@ h1 {
   margin-bottom: 50px;
 }
 
+  /* Flash messages */
+
+  .welcome, .goodbye {
+    text-align: center;
+  }
+
+/* ============================================================
+   Home Page
+   ===========================================================*/  
+
 h2 {
   margin-top: 0;
   border-bottom: 1px solid #4B4B4B;
@@ -49,18 +63,19 @@ h2 {
   float: left;
 }
 
-#signup, #login {
-  padding: 20px;
-}
-
 #login .label_width {
   display: block;
   width: 105px;
   float: left;
 }
 
+#signup, #login {
+  padding: 20px;
+}
+
 .submit {
   text-align: center;
+  margin-top: 17px;
 }
 
 .signin_error {
@@ -69,14 +84,6 @@ h2 {
 
 .signin_error:before {
   content: "• ";
-}
-
-.welcome, .goodbye {
-  text-align: center;
-}
-
-.submit {
-  margin-top: 17px;
 }
 
 input.button {
@@ -91,6 +98,10 @@ input.button:hover {
   background: -webkit-linear-gradient(top, #DFDFDF, #555252);
   color: white;
 }
+
+/* ============================================================
+   Login Count Page
+   ===========================================================*/  
 
 .count, .signout_button, .home_button {
   text-align: center;
@@ -120,6 +131,11 @@ input.button:hover {
   margin-top: 170px;
   font-size: 1.5em;
 }
+
+
+/* ============================================================
+   Signed Out Page
+   ===========================================================*/  
 
 img {
   border: 1px solid #A3A3A3;
