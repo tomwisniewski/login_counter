@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'blaa';
+  src: url("SketchRockwell-Bold.ttf") format("truetype");
+}
+
+body {
+  background: url('blaa.jpg');
+  font-family: 'blaa';
+  color: #4B4B4B;
+}
+
+.wrapper {
+  width: 800px;
+  height: 800px;
+  background: rgba(255, 255, 255, .5);
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 1px solid #A3A3A3;
+  border-radius: 20px;
+  box-shadow: 0 0 white, -1px -1px #999999;
+}
+
+h1 {
+  padding: 32px 0 0 0;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h2 {
+  margin-top: 0;
+  border-bottom: 1px solid #4B4B4B;
+}
+
+#login, #signup {
+  width: 310px;
+  height: 200px;
+  float: left;
+  border: 1px solid #A3A3A3;
+  margin-left: 32px;
+  background: rgba(255, 255, 255, .6);
+  border-radius: 15px;
+  box-shadow: 0 0 white, -1px -1px #999999;
+}
+
+#signup .label_width {
+  display: block;
+  width: 160px;
+  float: left;
+}
+
+#signup, #login {
+  padding: 20px;
+}
+
+#login .label_width {
+  display: block;
+  width: 105px;
+  float: left;
+}
+
+.submit {
+  text-align: center;
+}
+
+.signin_error {
+  margin-left: 414px;
+}
+
+.signin_error:before {
+  content: "• ";
+}
+
+.welcome, .goodbye {
+  text-align: center;
+}
+
+.submit {
+  margin-top: 17px;
+}
+
+input.button {
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-family: 'blaa';
+  color: #4B4B4B;
+  background: -webkit-linear-gradient(top, white, #747d7d);
+}
+
+input.button:hover {
+  background: -webkit-linear-gradient(top, #DFDFDF, #555252);
+  color: white;
+}
+
+.count, .signout_button, .home_button {
+  text-align: center;
+}
+
+.signout_link a, .home_link a {
+  text-decoration: none;
+  font-family: 'blaa';
+  color: #4B4B4B;
+}
+
+.signout_link a:hover, .home_link a:hover {
+  color: white;
+}
+
+.signout_link , .home_link {
+  padding: 5px 20px;
+  border-radius: 10px;
+  background: -webkit-linear-gradient(top, white, #747d7d);
+}
+
+.signout_link:hover, .home_link:hover {
+  background: -webkit-linear-gradient(top, #DFDFDF, #555252);
+}
+
+.count {
+  margin-top: 170px;
+  font-size: 1.5em;
+}
+
+img {
+  border: 1px solid #A3A3A3;
+  border-radius: 15px;
+  box-shadow: 0 0 white, -1px -1px #999999;
+  opacity: .8;
+}
+
+.cat {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.cat a {
+  text-decoration: none;
+}
+
+.cat a:hover {
+  color: #811389;
+}

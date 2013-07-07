@@ -1,0 +1,30 @@
+<div class="signup_msgs"></div>
+<p><%= styled_flash %></p>
+
+<form action="/signup" method="post" id="signup">
+  <h2>Sign Up</h2>
+  <label class="label_width" for="first_name">First Name</label>
+  <input type="text" id="first_name" name="first_name" />
+  <label class="label_width" for="last_name">Last Name</label>
+  <input type="text" id="last_name" name="last_name" />
+  <label class="label_width" for="email">Email</label>
+  <input type="text" id="email" name="email" />
+  <label class="label_width" for="password">Password</label>
+  <input type="password" id="password" name="password" />
+  <label class="label_width" for="password_confirmation">Password Confirmation</label>
+  <input type="password" id="password_confirmation" name="password_confirmation" />
+  <div class="submit">
+    <input type="submit" class="button signup_btn" value="Sign Up" />
+  </div> 
+</form>
+
+<form action='/login' method="post" id="login">
+  <h2>Log In</h2>
+  <label class="label_width" for="login_email">Email</label>
+  <input type="text" id="login_email" name="login_email" />
+  <label class="label_width" for="login_password">Password</label>
+  <input type="password" id="login_password" name="login_password" />
+  <div class="submit">
+    <input type="submit" class="button" value="Log In" />
+  </div>
+</form>  

@@ -1,0 +1,22 @@
+<%= styled_flash %>
+
+<% if signed_in? %> 
+  <% if @count == 1 %> 
+    <p class="count">This is your first log in! Exciting!</p>
+  <% else %>  
+    <p class="count">You have logged in <%= @count %> times</p>
+  <% end %>
+  <div class="signout_button">
+    <button class="signout_link"><a href='/signout' >Sign Out</a></button>
+  </div>  
+<% end %>  
+
+<% unless signed_in? %>
+  <div class="cat">
+    <img src='css/cat.jpg' />
+    <p>Want to see more cats? Visit <a href="http://itsrainingcatsanddogs.herokuapp.com" target="_blank">It's raining cats and dogs</a></p>
+  </div>
+  <div class="home_button">
+    <button class="home_link"><a href='/' >Back To Home</a></button>
+  </div>  
+<% end %>

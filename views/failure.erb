@@ -1,0 +1,11 @@
+<div>
+  <% if @new_user %>
+    <% if @new_user.errors %>
+      <ul>
+        <% @new_user.errors.each do |e| %>
+          <li><%= e.first %></li>
+        <% end %>
+      </ul>
+    <% end %>
+  <% end %>
+</div>
