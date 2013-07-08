@@ -27,8 +27,8 @@ class User
   property :password_hash, Text,  :required => true, 
                                   :length => 60                            
   
-  # validates_length_of       :password_confirmation, :within => 6..15,
-  #                           :message => "Password must be between 6 and 15 characters long"
+  validates_length_of       :password_confirmation, :within => 6..15, :if => :new?,
+                            :message => "Password must be between 6 and 15 characters long"
   validates_confirmation_of :password, :if => :new?
 
   def password
